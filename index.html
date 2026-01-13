@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Did I? - Beta Access</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-color: #1e1e1e;
+            --text-color: #e0e0e0;
+            --accent-color: #ff4757; /* ReddX Red */
+            --secondary-color: #2f3542;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: var(--card-color);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            max-width: 400px;
+            text-align: center;
+            border: 1px solid #333;
+        }
+
+        h1 { margin-bottom: 10px; color: #fff; }
+        p { color: #aaa; line-height: 1.5; margin-bottom: 30px; }
+
+        .step-card {
+            background: var(--secondary-color);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .step-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #ccc;
+            margin-bottom: 5px;
+            display: block;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+            transition: transform 0.2s, opacity 0.2s;
+            box-sizing: border-box;
+        }
+
+        .btn:active { transform: scale(0.98); }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .btn-secondary {
+            background-color: #fff;
+            color: #121212;
+        }
+
+        .note { font-size: 0.85rem; color: #666; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Help Test "Did I?"</h1>
+        <p>Join the exclusive Android Beta Squad. Follow these two steps to unlock access.</p>
+
+        <div class="step-card">
+            <span class="step-label">Step 1: The Whitelist</span>
+            <div style="font-size: 0.9rem; color: #bbb; margin-bottom: 10px;">
+                You must join this group so Google knows you are a human tester.
+            </div>
+            <a href="https://groups.google.com/g/reddx-testing-lab" target="_blank" class="btn btn-secondary">
+                Join Google Group
+            </a>
+        </div>
+
+        <div class="step-card" style="opacity: 1;">
+            <span class="step-label">Step 2: The Download</span>
+            <div style="font-size: 0.9rem; color: #bbb; margin-bottom: 10px;">
+                Once you're in the group, click this to download the app from the Play Store.
+            </div>
+            <a href="https://play.google.com/apps/testing/com.reddx.didi" target="_blank" class="btn btn-primary">
+                Download App
+            </a>
+        </div>
+
+        <div class="note">
+            *You must keep the app installed for 14 days to earn the Beta Role.
+        </div>
+    </div>
+
+</body>
+</html>
