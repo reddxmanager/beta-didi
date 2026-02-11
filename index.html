@@ -75,15 +75,34 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
         }
+        .btn-fidgeit {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+        .btn-hatchbyte {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            color: #121212;
+        }
         .app-grid {
             display: grid;
-            gap: 15px;
+            gap: 10px;
         }
         .app-btn {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
+        }
+        .tag {
+            display: inline-block;
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: rgba(255,255,255,0.15);
+            margin-left: 6px;
+            vertical-align: middle;
         }
         .note { font-size: 0.85rem; color: #666; margin-top: 20px; }
     </style>
@@ -108,12 +127,12 @@
             <div style="font-size: 0.9rem; color: #bbb; margin-bottom: 10px;">
                 Once you're in the group, download any apps you want to test.
             </div>
-                <a href="https://play.google.com/apps/testing/com.reddx.spinit" target="_blank" class="btn btn-spinit app-btn">
-                    🎡 Spin It — Decision Wheel
-                </a>
             <div class="app-grid">
-                <a href="https://play.google.com/apps/testing/com.reddx.didi" target="_blank" class="btn btn-primary app-btn">
-                    ✓ Did I? — Anxiety Relief 
+                <a href="https://play.google.com/apps/testing/com.reddx.fidgeit" target="_blank" class="btn btn-fidgeit app-btn">
+                    🌀 Fidge It — ADHD Fidget Toys <span class="tag">New</span>
+                </a>
+                <a href="https://play.google.com/apps/testing/com.reddx.hatchbyte" target="_blank" class="btn btn-hatchbyte app-btn">
+                    🥚 Hatchbyte — Monster Raising RPG <span class="tag">New</span>
                 </a>
             </div>
         </div>
